@@ -14,8 +14,9 @@ public class MainActivity extends DroidGap
 {
 	public void onCreate(Bundle savedInstanceState)
 	{
+		//super.setIntegerProperty("loadUrlTimeoutValue", 30000);
 		super.onCreate(savedInstanceState);
-		super.loadUrl("file:///android_asset/www/index2.html");
+		super.loadUrl("file:///android_asset/www/index.html");
 			
 		
 		
@@ -25,7 +26,7 @@ public class MainActivity extends DroidGap
 	{
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
-		return true; 
+		return true;
 	}
 
 }

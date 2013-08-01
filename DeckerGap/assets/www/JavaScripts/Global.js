@@ -3,10 +3,16 @@ $(document).ready(function ()
 {
 	window.DMO_Controler.Init();
 	window.DMO_Console.Init();
-	window.DMO_Account.Login();
-	TEST_GetTestData();
+
 }
 );
+$(document).load(function(){
+
+
+	//TEST_GetTestData(); 
+
+
+});
 
 window.DMO_Config =
 {
@@ -40,7 +46,7 @@ window.DMO_Controler =
 	{
 		$.ajax(
 		{
-			url : "JavaScript/" + _ScriptName,
+			url : "js/" + _ScriptName,
 			type : "GET",
 			dataType : "script",
 			async : false
@@ -86,15 +92,15 @@ window.DMO_Account =
 	{
 		var username = _username || " ";
 		var password = _password || " ";
-		document.cookie = "LastLoginUser"+"=;expires="+(new Date(0)).toGMTString();
-		document.cookie = "SysLogin"+"=;expires="+(new Date(0)).toGMTString();
-		document.cookie = "DomAuthSessId"+"=;expires="+(new Date(0)).toGMTString();
+		//$.cookie(COOKIE_NAME, null, { path: '/' });
+		
 		
 		$.ajax(
 		{
 			url : "http://10.80.230.199/names.nsf?Login",
 			type : "POST",
 			dataType : "html",
+			timeout:5000,
 			async : false,
 			data :
 			{
@@ -105,7 +111,7 @@ window.DMO_Account =
 				"csspath" : "/ldfiles/ldcss/",
 				"imgepath" : "/ldfiles/ldimges/login/",
 				"Username" : "13jyanxch",
-				"Password" : "12345s6",
+				"Password" : "123456",
 				"Submit" : "%B5%C7%C2%BC",
 				"RedirectTo" : "/officedata/ldconfig.nsf?open",
 				"$PublicAccess" : "1",
@@ -155,4 +161,10 @@ var TEST_GetTestData = function ()
 
 	}
 	);
+}
+var testfunc2=function()
+{
+	window.DMO_Console.Log("StartLogin!");
+	window.DMO_Account.Login();
+	window.DMO_Console.Log("End!");
 }
