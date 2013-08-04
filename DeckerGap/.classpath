@@ -7,5 +7,6 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry exported="true" kind="lib" path="libs/cordova-2.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/adt-bundle-windows-x86-20130522/sdk/platforms/android-10/android.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

@@ -44,7 +44,8 @@
         <activity
             android:name="com.example.deckergap.MainActivity"
             android:label="@string/app_name" 
-            configChanges="orientation|keyboardHidden" >
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

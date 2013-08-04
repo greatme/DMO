@@ -16,10 +16,10 @@ public class MainActivity extends DroidGap
 	{
 		//super.setIntegerProperty("loadUrlTimeoutValue", 30000);
 		super.onCreate(savedInstanceState);
-		super.loadUrl("file:///android_asset/www/index.html");
-			
-		
-		
+		super.loadUrl("file:///android_asset/www/Login.html");  
+			 
+		   
+	 	 
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu)

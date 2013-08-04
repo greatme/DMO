@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="Styles/jquery.mobile.structure-1.3.2.css">
 <script src="JavaScripts/jquery-1.8.2.js"></script>
 <script type="text/javascript" src="JavaScripts/jquery.mobile-1.3.2.min.js"></script>
+<script type="text/javascript" src="JavaScripts/Config.js"></script> 
 <script type="text/javascript" src="JavaScripts/Global.js"></script> 
 <script type="text/javascript" src="JavaScripts/jquery.urldecoder.js"></script>
 <script type="text/javascript" src="JavaScripts/jquery.cookie.js"></script>
@@ -19,24 +20,17 @@
       <h1>文件列表</h1>
 	   <div data-role="navbar" >
         <ul>
-            <li><a   href="#">One</a></li>
+            <li><a href="#">One</a></li>
             <li><a href="#">Two</a></li>
             <li><a href="#">Three</a></li>
         </ul>
     </div>
    </div><!-- /header -->
    <div data-role="content" >
-      <ul data-role="listview" data-dividertheme="e" style="margin-top: 0;">
-         <li data-role="list-divider">代办文件</li>
-         <li><a href="#nav1">文件1</a></li>
-         <li><a href="#nav1">文件2</a></li>
-         <li><a href="#nav1">文件3</a></li>
-         <li><a href="#nav1">文件4</a></li>
-         <li><a href="#nav1">文件5</a></li>
-         <li data-role="list-divider">待阅文件</li>
-         <li><a href="#nav2">待阅文件1</a></li>
-         <li><a href="#nav2">待阅文件2</a></li>
-         <li><a href="#nav2">待阅文件3</a></li>
+      <ul  data-role="listview" data-dividertheme="e" style="margin-top: 0;">
+
+
+
       </ul>
    </div><!-- /content -->
 <div data-role="footer" data-position="fixed">
@@ -50,6 +44,7 @@
    </div><!-- /header -->
 <div data-role="content">
 <p>我是代办文件内容哦！</P>
+<button style="width:50px;height:50px; background-color:red;" onclick="testfunc3();">点我有惊喜</button>
 </div><!-- /content -->
    <div data-role="footer" data-position="fixed">
       <h4>文件X</h4>
